@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PublishView" customModule="QQXiangHaSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQx-J6-g08" customClass="TopImageBtn" customModule="QQXiangHaSwift" customModuleProvider="target">
+                    <rect key="frame" x="74" y="0.0" width="107" height="118"/>
+                    <state key="normal" title="发帖" image="z_home_ico_tie"/>
+                    <connections>
+                        <action selector="invitationBtnOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Iqg-X7-xhy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEM-pE-4r7" customClass="TopImageBtn" customModule="QQXiangHaSwift" customModuleProvider="target">
+                    <rect key="frame" x="194" y="0.0" width="107" height="118"/>
+                    <state key="normal" title="菜谱" image="z_home_ico_caipu"/>
+                    <connections>
+                        <action selector="menuBtnOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="dRa-83-cap"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZQx-J6-g08" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="16t-1V-N8k"/>
+                <constraint firstItem="tEM-pE-4r7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8uY-Mk-Ahl"/>
+                <constraint firstItem="ZQx-J6-g08" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-60" id="Zau-Qo-zWz"/>
+                <constraint firstAttribute="bottom" secondItem="tEM-pE-4r7" secondAttribute="bottom" id="h9w-9e-cFE"/>
+                <constraint firstAttribute="bottom" secondItem="ZQx-J6-g08" secondAttribute="bottom" id="hJq-la-A0q"/>
+                <constraint firstItem="tEM-pE-4r7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="60" id="qqu-g0-IAK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="invitationBtn" destination="ZQx-J6-g08" id="Vp5-Tj-bQn"/>
+                <outlet property="menuBtn" destination="tEM-pE-4r7" id="1zH-bJ-JqO"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="198"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="z_home_ico_caipu" width="70" height="70"/>
+        <image name="z_home_ico_tie" width="70" height="70"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ADViewController" customModule="QQXiangHaSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="containView" destination="Vfr-gI-CEr" id="APe-FB-KXK"/>
+                <outlet property="jumpBtn" destination="kGT-gw-MFe" id="MwE-Il-js8"/>
+                <outlet property="lanunchImageView" destination="N8P-R2-zCy" id="btc-ST-pyd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8P-R2-zCy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfr-gI-CEr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGT-gw-MFe">
+                    <rect key="frame" x="305" y="60" width="40" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="跳过2"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="jumpOnClick:" destination="-1" eventType="touchUpInside" id="cr9-Sr-Omz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vfr-gI-CEr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3RM-1S-Bpm"/>
+                <constraint firstAttribute="trailing" secondItem="N8P-R2-zCy" secondAttribute="trailing" id="Dqa-bF-bm6"/>
+                <constraint firstAttribute="bottom" secondItem="Vfr-gI-CEr" secondAttribute="bottom" id="Mo5-ym-9f7"/>
+                <constraint firstItem="N8P-R2-zCy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SMD-AQ-WKW"/>
+                <constraint firstItem="Vfr-gI-CEr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VWT-9s-vXg"/>
+                <constraint firstAttribute="trailing" secondItem="kGT-gw-MFe" secondAttribute="trailing" constant="30" id="Zlu-Ir-jPD"/>
+                <constraint firstItem="N8P-R2-zCy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="apg-Yy-qXP"/>
+                <constraint firstItem="kGT-gw-MFe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="cHt-bw-Ggv"/>
+                <constraint firstAttribute="bottom" secondItem="N8P-R2-zCy" secondAttribute="bottom" id="cqk-MR-wrn"/>
+                <constraint firstAttribute="trailing" secondItem="Vfr-gI-CEr" secondAttribute="trailing" id="hgq-cp-vRu"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

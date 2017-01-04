@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        application.statusBarStyle = .lightContent
+        
+        self.window = UIWindow (frame:kScreenBounds)
+        self.window?.backgroundColor = UIColor.white
+        self.window?.rootViewController = ADViewController()
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
